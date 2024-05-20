@@ -25,7 +25,7 @@ impl Keyboard for Macropad {
 }
 
 setup_adc_sampler! {
-    (interrupt: No, adc: ADC1) => {
+    (interrupt: ADC1_2, adc: ADC1) => {
         Multiplexer {
             pin: PA8, // MCU analog pin connected to a multiplexer
             select_pins: [ No No No ] // Pins connected to the selection pins on the multiplexer
