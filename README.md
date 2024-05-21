@@ -1,6 +1,7 @@
 # rumcake-template
 
 <!--toc:start-->
+- [rumcake-template](#rumcake-template)
   - [About](#about)
   - [Toolchain requirements](#toolchain-requirements)
     - [Target](#target)
