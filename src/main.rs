@@ -25,13 +25,14 @@ impl Keyboard for Macropad {
 }
 
 setup_adc_sampler! {
-    (interrupt: ADC1_2, adc: ADC1) => {
+    (timer: TIMER2, ppi_ch0: PPI_CH2, ppi_ch1: PPI_CH3) => {
         Multiplexer {
-            pin: PA8, // MCU analog pin connected to a multiplexer
-            select_pins: [ No No No ] // Pins connected to the selection pins on the multiplexer
+            pin: P0_31, // MCU analog pin connected to a multiplexer
+            select_pins: [ P0_22 P0_24 P1_00 P0_11 ] // Pins connected to the selection pins on the multiplexer
         }
     }
 }
+
 
 impl KeyboardMatrix for Macropad {
     type Layout = Self;
