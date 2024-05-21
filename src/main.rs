@@ -57,16 +57,10 @@ impl KeyboardLayout for Macropad {
     // Use the remapping above to create the keyboard layout
         build_layout! {
             {
-                [1  2   3   4]
-                [Q  W   E   R]
-                [A  S   D   F]
-                [Z  X   C   V]
-            }
-            {
-                [5 6 7 8]
-                [T Y U I]
-                [G H J K]
-                [B N M ,]
+                [1 2 3 4]
+                [Q W E R]
+                [A S D F]
+                [Z X C V]
             }
         }
 }
